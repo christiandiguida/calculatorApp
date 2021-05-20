@@ -25,14 +25,13 @@ export class CalculatorComponent implements OnInit {
     },
   };
 
-  insertValueByKey(event) {
-    console.log(event);
-  }
   insertValue(value: string) {
     if (this.calculatorScreen === `${this.result}`) {
       this.calculatorScreen = '';
     }
-    this.calculatorScreen += value;
+    if (this.calculatorScreen.length < 10) {
+      this.calculatorScreen += value;
+    }
   }
 
   sum() {
@@ -66,14 +65,18 @@ export class CalculatorComponent implements OnInit {
 
   equal() {
     if (this.calculatorScreen !== '') {
-      if (this.result > 100000000000) {
+      if (this.result > 100000000000 || this.calculatorScreen.length > 9) {
+        console.log(this.calculatorScreen.length);
         this.calculatorScreen = 'Error';
-      } else {
+      } else if (this.operator !== '') {
         this.result = this.operations[this.operator](
           this.firstValue,
           parseFloat(this.calculatorScreen)
         );
         this.calculatorScreen = `${this.result}`;
+        if (this.calculatorScreen.length >= 10) {
+          this.calculatorScreen = this.result.toFixed(2);
+        }
       }
     }
   }

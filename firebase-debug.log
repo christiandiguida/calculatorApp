@@ -1,0 +1,89 @@
+[debug] [2021-05-20T17:47:59.896Z] ----------------------------------------------------------------------
+[debug] [2021-05-20T17:47:59.899Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2021-05-20T17:47:59.900Z] CLI Version:   9.10.2
+[debug] [2021-05-20T17:47:59.900Z] Platform:      darwin
+[debug] [2021-05-20T17:47:59.900Z] Node Version:  v14.17.0
+[debug] [2021-05-20T17:47:59.911Z] Time:          Thu May 20 2021 19:47:59 GMT+0200 (Central European Summer Time)
+[debug] [2021-05-20T17:47:59.911Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-20T17:47:59.923Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-20T17:47:59.923Z] > authorizing via signed-in user (chridrummer@gmail.com)
+[debug] [2021-05-20T17:47:59.923Z] [iam] checking project calculatorapp-72c03 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-05-20T17:47:59.928Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-05-20T17:47:59.928Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-20T17:48:00.170Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Thu, 20 May 2021 17:48:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-20T17:48:00.201Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/calculatorapp-72c03:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-05-20T17:48:01.040Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 20 May 2021 17:48:01 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=703","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-20T17:48:01.042Z] > refreshing access token with scopes: []
+[debug] [2021-05-20T17:48:01.042Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-20T17:48:01.184Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Thu, 20 May 2021 17:48:01 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-20T17:48:01.216Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/calculatorapp-72c03 [none]
+[debug] [2021-05-20T17:48:01.443Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/calculatorapp-72c03 200
+[debug] [2021-05-20T17:48:01.443Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/calculatorapp-72c03 {"projectId":"calculatorapp-72c03","projectNumber":"320360604395","displayName":"calculatorApp","name":"projects/calculatorapp-72c03","resources":{"hostingSite":"calculatorapp-72c03"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'calculatorapp-72c03'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-05-20T17:48:01.447Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-05-20T17:48:01.448Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-20T17:48:01.584Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Thu, 20 May 2021 17:48:01 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-20T17:48:01.615Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/calculatorapp-72c03/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-05-20T17:48:03.397Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 20 May 2021 17:48:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[calculatorapp-72c03]: beginning deploy... 
+[info] i  hosting[calculatorapp-72c03]: found 8 files in dist/calculatorApp 
+[debug] [2021-05-20T17:48:03.453Z] > refreshing access token with scopes: []
+[debug] [2021-05-20T17:48:03.453Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-20T17:48:03.454Z] [hosting] hash cache [ZGlzdC9jYWxjdWxhdG9yQXBw] stored for 8 files
+[debug] [2021-05-20T17:48:03.455Z] [hosting][hash queue][FINAL] {"max":24,"min":7,"avg":13,"active":0,"complete":8,"success":8,"errored":0,"retried":0,"total":8,"elapsed":39}
+[debug] [2021-05-20T17:48:03.603Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Thu, 20 May 2021 17:48:03 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-20T17:48:03.630Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/calculatorapp-72c03/versions/02dc01300e93e083:populateFiles [none]
+[debug] [2021-05-20T17:48:03.630Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/calculatorapp-72c03/versions/02dc01300e93e083:populateFiles {"files":{"/index.html":"b24705dd0a897160d27d6854a9e4400baab8b6e1b300f8e9ed3646e19bf7bf3c","/favicon.ico":"a2aee5309d0b59b9b66384ccc3969a07fab1b320d0bf76f1b25047a051d7f774","/runtime.7b63b9fd40098a2e8207.js":"c4aa0a348c0dcf9c6af4b7b3f066d0599bcec97472ed96ab232c8dceb70607cb","/assets/favicon-32x32.png":"19b784bd7a920c1dc9a6b684fbde062f066a74525d9c41da8dd0a9ba4329e149","/polyfills.00096ed7d93ed26ee6df.js":"392274cf3b12572bbc29c65f6c1863f18938801875473eb09ab63f9bd0803157","/3rdpartylicenses.txt":"3000304527e4f2f15d30d597bbbd673b3e73d10d8492773d4a17566a93fd5079","/styles.f09e401fd43394fe4d50.css":"d0b23fa3f7ca0bcb2de5304696e64bd8708afc615ef18596e8c184963ebadf3f","/main.e5fa0c7ca78a8c60c58b.js":"a88fee0100b7b999efa2b66341392d52ae1b9b9b9349c580db2c061cb8d59aca"}}
+[debug] [2021-05-20T17:48:04.967Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/calculatorapp-72c03/versions/02dc01300e93e083:populateFiles 200
+[debug] [2021-05-20T17:48:04.967Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/calculatorapp-72c03/versions/02dc01300e93e083:populateFiles {"uploadRequiredHashes":["a88fee0100b7b999efa2b66341392d52ae1b9b9b9349c580db2c061cb8d59aca","b24705dd0a897160d27d6854a9e4400baab8b6e1b300f8e9ed3646e19bf7bf3c"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/calculatorapp-72c03/versions/02dc01300e93e083/files"}
+[debug] [2021-05-20T17:48:04.968Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/calculatorapp-72c03/versions/02dc01300e93e083/files/a88fee0100b7b999efa2b66341392d52ae1b9b9b9349c580db2c061cb8d59aca [none]
+[debug] [2021-05-20T17:48:04.968Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/calculatorapp-72c03/versions/02dc01300e93e083/files/a88fee0100b7b999efa2b66341392d52ae1b9b9b9349c580db2c061cb8d59aca [stream]
+[debug] [2021-05-20T17:48:04.969Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/calculatorapp-72c03/versions/02dc01300e93e083/files/b24705dd0a897160d27d6854a9e4400baab8b6e1b300f8e9ed3646e19bf7bf3c [none]
+[debug] [2021-05-20T17:48:04.969Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/calculatorapp-72c03/versions/02dc01300e93e083/files/b24705dd0a897160d27d6854a9e4400baab8b6e1b300f8e9ed3646e19bf7bf3c [stream]
+[debug] [2021-05-20T17:48:04.970Z] [hosting][populate queue][FINAL] {"max":1515,"min":1515,"avg":1515,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1517}
+[debug] [2021-05-20T17:48:04.971Z] [hosting] uploads queued: 2
+[debug] [2021-05-20T17:48:06.515Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/calculatorapp-72c03/versions/02dc01300e93e083/files/b24705dd0a897160d27d6854a9e4400baab8b6e1b300f8e9ed3646e19bf7bf3c 200
+[debug] [2021-05-20T17:48:06.515Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/calculatorapp-72c03/versions/02dc01300e93e083/files/b24705dd0a897160d27d6854a9e4400baab8b6e1b300f8e9ed3646e19bf7bf3c [stream]
+[debug] [2021-05-20T17:48:06.632Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/calculatorapp-72c03/versions/02dc01300e93e083/files/a88fee0100b7b999efa2b66341392d52ae1b9b9b9349c580db2c061cb8d59aca 200
+[debug] [2021-05-20T17:48:06.632Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/calculatorapp-72c03/versions/02dc01300e93e083/files/a88fee0100b7b999efa2b66341392d52ae1b9b9b9349c580db2c061cb8d59aca [stream]
+[debug] [2021-05-20T17:48:06.632Z] [hosting][upload queue][FINAL] {"max":1665,"min":1548,"avg":1606.5,"active":0,"complete":2,"success":2,"errored":0,"retried":0,"total":2,"elapsed":1665}
+[info] ✔  hosting[calculatorapp-72c03]: file upload complete 
+[debug] [2021-05-20T17:48:06.633Z] [hosting] deploy completed after 3235ms
+[debug] [2021-05-20T17:48:06.760Z] [
+  {
+    "config": {
+      "public": "dist/calculatorApp",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "calculatorapp-72c03"
+    },
+    "site": "calculatorapp-72c03",
+    "version": "sites/calculatorapp-72c03/versions/02dc01300e93e083"
+  }
+]
+[info] i  hosting[calculatorapp-72c03]: finalizing version... 
+[debug] [2021-05-20T17:48:06.760Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-05-20T17:48:06.761Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-20T17:48:07.105Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Thu, 20 May 2021 17:48:06 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-20T17:48:07.134Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/calculatorapp-72c03/versions/02dc01300e93e083?updateMask=status  
+ {"status":"FINALIZED"}

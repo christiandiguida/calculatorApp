@@ -67,4 +67,9 @@
   #equalButton {
     width: 100px;
   }
+  #screenNumbers {
+    margin: 0px;
+    font-size: 25px;
+    color: white;
+  }
 }
