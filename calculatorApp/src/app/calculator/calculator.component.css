@@ -1,0 +1,32 @@
+.container {
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  min-height: 100vh;
+}
+
+#calculatorContainer {
+  width: 600px;
+}
+
+#calculatorScreen {
+  height: 100px;
+}
+#screenNumbers {
+  margin: 0px;
+}
+#keysContainer {
+  /* width: 800px;
+  height: 600px; */
+}
+
+.btn {
+  width: 100px;
+  height: 70px;
+}
+
+#resetButton {
+  width: 250px;
+}
+#equalButton {
+  width: 250px;
+}
