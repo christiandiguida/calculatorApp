@@ -54,7 +54,7 @@
 
 @media (max-width: 800px) {
   #calculatorContainer {
-    width: 400px;
+    width: 300px;
   }
   .btn {
     width: 75px;
