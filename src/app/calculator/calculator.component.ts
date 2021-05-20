@@ -79,11 +79,7 @@ export class CalculatorComponent implements OnInit {
   }
 
   del() {
-    console.log(this.result);
-
-    if (this.calculatorScreen !== '' && this.result !== undefined) {
-      this.calculatorScreen = `${this.result}`;
-    }
+    this.calculatorScreen = this.calculatorScreen.slice(0, -1);
   }
 
   reset() {
