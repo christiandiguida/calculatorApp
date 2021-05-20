@@ -52,12 +52,12 @@
   background-color: white;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #calculatorContainer {
     width: 300px;
   }
   .btn {
-    width: 75px;
+    width: 50px;
     height: 50px;
     font-size: 20px;
   }
